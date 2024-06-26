@@ -17,7 +17,7 @@ class ArticleFactory extends Factory
     public function definition(): array
     {
         return [
-            'article_id' => fake()->randomElement([1,2,3,4,5,6,7,8,9,10]),
+            'category_id' => fake()->randomElement([1,2,3,4,5]),
             'title' => fake()->word(),
             'description' => fake()->sentence(),
             'prix' => fake()->randomFloat(2,10,150),
